@@ -1,0 +1,3 @@
+ntplib >=0.1
+pyotp >=0.1
+cryptography >=0.1

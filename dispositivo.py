@@ -13,6 +13,9 @@ response = c.request('pool.ntp.org')
 # este valor no se actualiza automáticamente y solo tendrá el valor al momento de la llamada
 response.tx_time
 
+# Te recomiendo no usar multiples veces el comando c.request('pool.ntp.org') y solo lo utilices,
+# una sola vez y a partir de ahí uses funciones como sleep(1) para contar cada segundo transcurrido.
+
 # Este es el valor que deberás actualizar cada 10 segundos para que se actualice basado en las reestricciones dadas
 # puedes utilizar la función de tiempo sleep(n) para poner una pausa de n segundos dentro de un loop while
 # de esta forma una vez coordinado la primera vez, podrás mostrar cada 10 segundos un nuevo código
